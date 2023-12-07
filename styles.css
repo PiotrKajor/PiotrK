@@ -1,21 +1,16 @@
 /* Resetowanie domyślnych styli */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Styl nagłówka */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+/* ... */
 
 /* Styl nawigacji */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
 nav ul {
     list-style: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -34,8 +29,13 @@ nav ul li a:hover {
 }
 
 /* Styl sekcji */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
 section {
-    padding: 50px 20px;
+    margin-bottom: 30px;
 }
 
 /* Styl stopki */
@@ -47,9 +47,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Dodatkowe style */
-main {
-    margin-top: 60px; /* Wyrównanie sekcji względem nagłówka */
 }
