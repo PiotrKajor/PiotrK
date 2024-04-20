@@ -2,15 +2,28 @@
 <html>
 <head>
   <style>
-    body {
-      background: url('https://cdn.discordapp.com/attachments/1040622524423208982/1231312294885982331/436835343_7530662056976949_6487343852029603818_n.mp4?ex=66367fef&is=66240aef&hm=f8a8923a93400a7a22fbafed207a0cd2177c3be8bc6705079371e522be9f0d66&') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      overflow: hidden;
+    #video-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000; /* Upewnij się, że jest na wierzchu */
+    }
+
+    video {
+      width: 200px; /* Dostosuj szerokość do preferencji */
+      height: auto; /* Zachowaj proporcje */
+      border: 1px solid #ccc; /* Dodaj obramowanie */
     }
   </style>
 </head>
 <body>
+  <div id="video-container">
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
   <!-- Twoja zawartość HTML tutaj -->
 </body>
 </html>
